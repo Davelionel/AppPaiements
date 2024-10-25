@@ -21,5 +21,16 @@ internal class Program
         paiement1.AfficherDetails();
         paiement2.AfficherDetails();
 
+        
+        Utilisateur utilisateur = new Utilisateur("Dave Lionel");
+
+        utilisateur.AjouterPaiement(achat1);
+        utilisateur.AjouterPaiement(achat2);
+        utilisateur.AjouterPaiement(achat3);
+        utilisateur.AjouterPaiement(paiement1);
+        utilisateur.AjouterPaiement(paiement2);
+
+        utilisateur.AfficherInfos();
+        
     }
 }
